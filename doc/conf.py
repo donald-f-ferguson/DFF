@@ -27,4 +27,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # html_theme = 'sphinx_rtd_theme'
 # html_theme = 'traditional'
 html_static_path = ['_static']
-html_theme = 'sphinx_material'
+# html_theme = 'sphinx_material'
+html_theme = "ansys_sphinx_theme"
