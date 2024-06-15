@@ -1,14 +1,80 @@
-.. Example documentation master file, created by
-   sphinx-quickstart on Sat Sep 23 20:35:12 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+PyAnsys Geometry documentation |version|
+========================================
 
-Welcome to Don's documentation!
-===================================
+PyAnsys Geometry is a Python client library for the Ansys Geometry service.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. grid:: 1 2 2 2
 
-   some-feature.md
-   another-feature.md
+
+    .. grid-item-card:: Getting started :fa:`person-running`
+        :padding: 2 2 2 2
+        :link: getting_started/index
+        :link-type: doc
+
+        Learn how to run the Windows Docker container, install the
+        PyAnsys Geometry image, and launch and connect to the Geometry
+        service.
+
+    .. grid-item-card:: User guide :fa:`book-open-reader`
+        :padding: 2 2 2 2
+        :link: user_guide/index
+        :link-type: doc
+
+        Understand key concepts and approaches for primitives,
+        sketches, and model designs.
+
+    .. jinja:: main_toctree
+
+        {% if build_api %}
+        .. grid-item-card:: API reference :fa:`book-bookmark`
+            :padding: 2 2 2 2
+            :link: api/index
+            :link-type: doc
+
+            Understand PyAnsys Geometry API endpoints, their capabilities,
+            and how to interact with them programmatically.
+        {% endif %}
+
+        {% if build_examples %}
+        .. grid-item-card:: Examples :fa:`scroll`
+            :padding: 2 2 2 2
+            :link: examples
+            :link-type: doc
+
+            Explore examples that show how to use PyAnsys Geometry to
+            perform many different types of operations.
+        {% endif %}
+
+    .. grid-item-card:: Contribute :fa:`people-group`
+        :padding: 2 2 2 2
+        :link: contributing
+        :link-type: doc
+
+        Learn how to contribute to the PyAnsys Geometry codebase
+        or documentation.
+
+    .. grid-item-card:: Assets :fa:`download`
+        :padding: 2 2 2 2
+        :link: assets
+        :link-type: doc
+
+        Download different assets related to PyAnsys Geometry,
+        such as documentation, package wheelhouse, and related files.
+
+.. jinja:: main_toctree
+
+    .. toctree::
+       :hidden:
+       :maxdepth: 3
+
+       getting_started/index
+       user_guide/index
+       {% if build_api %}
+       api/index
+       {% endif %}
+       {% if build_examples %}
+       examples
+       {% endif %}
+       contributing
+       assets
+       changelog
