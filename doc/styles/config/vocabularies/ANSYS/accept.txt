@@ -1,0 +1,27 @@
+(?i)ansys
+(?i)api
+(?i)check
+[Cc]onda
+(?i)dependabot
+Direct API
+Dockerfile
+(?i)docker
+dockerized
+Fluent API
+(?i)geometry
+Geometry service
+Geometry models
+(?i)github
+GitHub Container Registry
+namespace
+Polydata
+PROTO
+Protobuf
+(?i)pyansys
+(?i)pyansys-geometry
+PyPI
+PyVista
+pytest
+SciPy
+subpackage
+launch_modeler_with_.*
